@@ -76,12 +76,12 @@ namespace ExcelAnalyzer
             {
                 MessageBox.Show("YAHAHA! You Found Me!");
 
-                //DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
 
-                //if (!richTextBox1.Text.Contains(row.Cells["First Name"].Value.ToString()))
-                //{
-                //    richTextBox1.Text += row.Cells["First Name"].Value.ToString() + "\n";
-                //}
+                if (!richTextBox1.Text.Contains(row.Cells["First Name"].Value.ToString()))
+                {
+                    richTextBox1.Text += row.Cells["First Name"].Value.ToString() + "\n";
+                }
 
             }
         }
